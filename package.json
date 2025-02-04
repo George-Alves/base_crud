@@ -4,7 +4,8 @@
   "description": "Teste",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "vercel-build": "npx sequelize-cli db:migrate"
   },
   "author": "George Alves",
   "license": "ISC",
